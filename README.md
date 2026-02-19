@@ -1,6 +1,6 @@
 # LetsDefend Phishing Lab - Internal to Internal Email Compromise
 
-This repository documents a cybersecurity lab investigation from LetsDefend.io (or similar blue-team training platform). The scenario involves detecting and investigating a **phishing email** sent internally from a dormant/compromised endpoint.
+This repository documents a cybersecurity lab investigation from LetsDefend.io. The scenario involves detecting and investigating a **phishing email** sent internally from a dormant/compromised endpoint.
 
 The key finding: Malicious SMTP activity originating from a workstation that had **no legitimate user logins for ~4 months**, indicating persistence and post-compromise abuse.
 
