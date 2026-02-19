@@ -33,21 +33,23 @@ This timeline mismatch is a **classic indicator of compromise**:
 
 1. **Email Security Review**  
    Queried SIEM / Email Security → confirmed internal email with suspicious rule match.
+   
+   <img src="https://i.imgur.com/ryM0fCz.png" />
 
-2. **Log Management Check**  
+3. **Log Management Check**  
    Traced source IP `172.16.17.82` in central logs → identified as origin of SMTP connection.
 
-3. **Endpoint Security Lookup**  
+4. **Endpoint Security Lookup**  
    Queried EDR/Endpoint tool → Hostname: `JohnComputer`  
    Last login: October 10, 2020 → no activity since.
 
-4. **Timeline Correlation**  
+5. **Timeline Correlation**  
    Compared login history vs. email send time → **major anomaly detected**.
 
-5. **Containment**  
+6. **Containment**  
    Isolated the endpoint to prevent further abuse.
 
-6. **Disposition**  
+7. **Disposition**  
    **True Positive** – Confirmed malicious activity from compromised dormant host.
 
 ## Indicators of Compromise (IoCs)
